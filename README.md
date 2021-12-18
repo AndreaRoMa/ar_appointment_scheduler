@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was done as a technical test for the company CUSEUM
 
-Things you may want to cover:
+* Ruby version 2.7.3
 
-* Ruby version
+* Rails 6.1.4.4
 
-* System dependencies
+* Database Postgresql 
+ 
+* How to create a new Schedule use the path: http://localhost:3000/schedules
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
