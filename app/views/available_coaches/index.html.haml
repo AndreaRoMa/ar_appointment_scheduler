@@ -1,16 +1,8 @@
-%h1 Listing available_coaches
+%h1 Available_coaches
 
 %table
   %thead
-    %tr
-      %th Name
-      %th Day of week
-      %th Available at
-      %th Available until
-      %th Schedule
-      %th
-      %th
-      %th
+
 
   %tbody
     - @available_coaches.each do |available_coach|
@@ -26,4 +18,5 @@
 
 %br
 
-= link_to 'New Available coach', new_available_coach_path
+= link_to 'Whatch Available coach', new_available_coach_path
+= link_to 'Back', schedules_path
