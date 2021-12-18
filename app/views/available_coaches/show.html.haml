@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @available_coach.name
+%p
+  %b Day of week:
+  = @available_coach.day_of_week
+%p
+  %b Available at:
+  = @available_coach.available_at
+%p
+  %b Available until:
+  = @available_coach.available_until
+%p
+  %b Schedule:
+  = @available_coach.schedule
+
+= link_to 'Edit', edit_available_coach_path(@available_coach)
+\|
+= link_to 'Back', available_coaches_path

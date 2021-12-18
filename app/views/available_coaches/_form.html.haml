@@ -1,0 +1,14 @@
+-# frozen_string_literal: true
+= simple_form_for(@available_coach) do |f|
+  = f.error_notification
+  = f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?
+
+  .form-inputs
+    = f.input :name
+    = f.input :day_of_week
+    = f.input :available_at
+    = f.input :available_until
+    = f.association :schedule
+
+  .form-actions
+    = f.button :submit
