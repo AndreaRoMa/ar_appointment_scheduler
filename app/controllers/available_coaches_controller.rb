@@ -1,6 +1,6 @@
 class AvailableCoachesController < ApplicationController
   before_action :set_available_coach, only: %i[ show edit update destroy ]
-
+  
   # GET /available_coaches or /available_coaches.json
   def index
     @available_coaches = AvailableCoach.all
