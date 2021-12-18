@@ -1,0 +1,29 @@
+%h1 Listing available_coaches
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Day of week
+      %th Available at
+      %th Available until
+      %th Schedule
+      %th
+      %th
+      %th
+
+  %tbody
+    - @available_coaches.each do |available_coach|
+      %tr
+        %td= available_coach.name
+        %td= available_coach.day_of_week
+        %td= available_coach.available_at
+        %td= available_coach.available_until
+        %td= available_coach.schedule
+        %td= link_to 'Show', available_coach
+        %td= link_to 'Edit', edit_available_coach_path(available_coach)
+        %td= link_to 'Destroy', available_coach, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Available coach', new_available_coach_path
